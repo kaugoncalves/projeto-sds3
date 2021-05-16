@@ -29,12 +29,18 @@ function DonutChart() {
       show: true,
     },
   };
-  return (
+  return chartData ? (
     <Chart
       options={{ ...options, labels: chartData.labels }}
       series={chartData.series}
       type="donut"
       height="240"
+    />
+  ) : (
+    <img
+      style={{ marginLeft: "auto", marginRight: "auto", display: "block" }}
+      src="https://www.blogson.com.br/wp-content/uploads/2017/10/d9933c4e2c272f33b74ef18cdf11a7d5.gif"
+      alt="loading..."
     />
   );
 }
