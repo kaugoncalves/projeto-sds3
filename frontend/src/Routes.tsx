@@ -7,6 +7,7 @@ function Routes() {
     <div>
       <BrowserRouter>
         <Switch>
+          
           <Route path="/" exact>
             <Home />
           </Route>
@@ -14,11 +15,6 @@ function Routes() {
           <Route path="/dashboard">
             <Dashboard />
           </Route>
-
-          <Route path="/" exact>
-            <Home />
-          </Route>
-
 
         </Switch>
       </BrowserRouter>
