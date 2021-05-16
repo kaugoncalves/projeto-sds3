@@ -18,7 +18,7 @@ function Footer() {
           <small>
             <strong>Semana Spring React</strong>
             <br />
-            Evento promovido pela escola DevSuperior:{" "}
+            Me segue no insta 😍:{" "}
             <a
               href="https://instagram.com/kauans_"
               target="_blank"
