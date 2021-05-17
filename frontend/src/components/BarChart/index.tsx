@@ -58,7 +58,7 @@ function Barchart() {
     },
   };
 
-  return chartData ? (
+  return chartData.labels.categories.length > 0 ? (
     <Chart
       options={{ ...options, xaxis: chartData.labels }}
       series={chartData.series}

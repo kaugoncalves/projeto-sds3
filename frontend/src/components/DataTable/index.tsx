@@ -27,7 +27,7 @@ function DataTable() {
     setActivePage(index);
   };
 
-  return page ? (
+  return page.totalPages > 0 ? (
     <>
       <Pagination page={page} onPageChange={changePage} />
       <div className="table-responsive">

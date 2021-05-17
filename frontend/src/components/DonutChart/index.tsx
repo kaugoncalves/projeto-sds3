@@ -29,7 +29,7 @@ function DonutChart() {
       show: true,
     },
   };
-  return chartData ? (
+  return chartData.labels.length > 0 ? (
     <Chart
       options={{ ...options, labels: chartData.labels }}
       series={chartData.series}
